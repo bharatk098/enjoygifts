@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>EnjoyGifts</title>
+<title>Home Page</title>
+<link rel="shortcut icon" type="image/jpg" href="https://th.bing.com/th/id/R.7fe3baa7d14308d15d0a46180d460949?rik=KnMDMWpoV%2fy82Q&riu=http%3a%2f%2fpluspng.com%2fimg-png%2ffavicon-png-favicon-1024.png&ehk=%2bqV5vS87IkGxoQ9CGodbGHtJdQuFWcL1ZerjusSBDCE%3d&risl=&pid=ImgRaw&r=0"/>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,26 +12,43 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .w3-bar-block .w3-bar-item {padding:20px}
 
-@media (max-width: 767px) {
-            /* On mobile screens, display 2 items in a single row */
-            .catt {
-                flex-basis: 50%;
-            }
-        }
+.logotext{
+  margin-right: 10px;
+  margin-top: 20px;
+}
 
+.hamburgerr{
+
+  margin-top: 20px;
+
+}
+
+.whatsappsocial{
+  margin-top: 1px;
+}
 </style>
 </head>
 <body>
  
 
-  
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Back</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">+91 1234567890</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+
 
 <!-- Top menu -->
 <div class="w3-top">
   <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    
-    <div class="w3-right w3-padding-16">Mail</div>
-    <div class="w3-center w3-padding-16">Enjoy Gifts</div>
+    <div class="w3-button w3-padding-16 w3-left hamburgerr" onclick="w3_open()">☰</div>
+
+    <div class="w3-right w3-padding-16"><h2 class="logotext">EnjoyGifts</h2></div>
+    <div class="w3-center w3-padding-16"><img height="70px" width="150px" src="https://th.bing.com/th/id/R.16a0c60aea0cf02d3aa4d2df1fbaa22b?rik=Eo%2f4me6oHLxUVQ&riu=http%3a%2f%2fblog.kooldesignmaker.com%2fwp-content%2fuploads%2f2013%2f05%2f130.jpg&ehk=FlUAp8sogavVvADe7SE%2fnqw8sqq0bOVr2OVlB9AGS6I%3d&risl=&pid=ImgRaw&r=0"></div>
+
   </div>
 </div>
   
@@ -38,26 +57,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter catt">
+    <div class="w3-quarter">
       <img src="images/mugs.jpg" alt="Sandwich" style="width:100%">
       <a href="mugs.html"><h3>Mugs</h3></a>
       <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
 
-    <div class="w3-quarter catt">
+    <div class="w3-quarter">
       <img src="https://th.bing.com/th/id/OIP.R3xfTSM1gsur1kCTOHmBCQHaHa?pid=ImgDet&rs=1" alt="Steak" style="width:100%">
       <h3>coushins</h3>
       <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
 
-    <div class="w3-quarter catt">
+    <div class="w3-quarter">
       <img src="https://www.yourprint.in/wp-content/uploads/2020/02/Outer_frame-1.jpg" alt="Cherries" style="width:100%">
       <h3>photo frames</h3>
       <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
      
     </div>
 
-    <div class="w3-quarter catt">
+    <div class="w3-quarter">
       <img src="https://th.bing.com/th/id/R.eb24a495f933b31741fbdcdda2bbf577?rik=1jDiXSdTU5iBuw&riu=http%3a%2f%2ffriendsprintart.in%2fassets%2fimages%2fproduct%2fcustom-mobile-cover_0.jpg&ehk=94FnOpjl4LTyTYEZiIiGHknenc6qB6mzD3rZr90y77Q%3d&risl=&pid=ImgRaw&r=0" alt="Pasta and Wine" style="width:100%">
       <h3>customized mobile covers</h3>
       <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
@@ -67,26 +86,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   
   <!-- Second Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter catt">
+    <div class="w3-quarter">
       <img src="https://www.theelocalstore.com/wp-content/uploads/2021/01/12-2048x2048.jpg" alt="Popsicle" style="width:100%">
       <h3><b>Mobile Skins</b></h3>
       <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
 
-    <div class="w3-quarter catt">
+    <div class="w3-quarter">
       <img src="https://th.bing.com/th/id/OIP.wzbNHN5yARSetHjk8KFMwgHaHa?pid=ImgDet&rs=1" alt="Salmon" style="width:100%">
       <h3>customized T-Shirts</h3>
       <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
 
 
-    <div class="w3-quarter catt">
+    <div class="w3-quarter">
       <img src="https://5.imimg.com/data5/YS/DK/MY-3525275/vhbkr-500x500.jpg" alt="Sandwich" style="width:100%">
       <h3>customized Keychains</h3>
       <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
 
-    <div class="w3-quarter catt">
+    <div class="w3-quarter">
       <img src="" alt="Croissant" style="width:100%">
       <h3>Mobile Covers</h3>
       <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
@@ -125,20 +144,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
       <h3>Address</h3>
       <p>40 Feet Road, Near Phatak, Anand Nagar Colony Khairthal (Raj.) </p>
 
-      <iframe height="100px" width="370px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653782.4701065696!2d73.87811792459928!3d26.57965956694138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db6c02325aeeb%3A0x5397f1212a30f3b3!2sLucky%20Collections!5e0!3m2!1sen!2sin!4v1698584481435!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+      <iframe height="100px" width="340px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653782.4701065696!2d73.87811792459928!3d26.57965956694138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db6c02325aeeb%3A0x5397f1212a30f3b3!2sLucky%20Collections!5e0!3m2!1sen!2sin!4v1698584481435!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
     </div>
   
     <div class="w3-third">
       <h3>Social Links</h3>
       <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
+        <li class="w3-padding-16 whatsappsocial">
           <img src="https://th.bing.com/th/id/OIP.C7zNDr2ScrV2S3AFJY60eAHaHa?pid=ImgDet&rs=1" class="w3-left w3-margin-right" style="width:50px">
-          <span mar class="w3-large">Chat On Whatsapp</span><br>
+          <span mar class="w3-large">Whatsapp</span><br>
           
         </li>
         <li class="w3-padding-16 sociallinks">
-          <a href="www.instagram.com"><img src="https://th.bing.com/th/id/OIP.jmue6n2QHBLdW5Mwa1cl8QHaHa?pid=ImgDet&rs=1" class="w3-left w3-margin-right sociallinks" style="width:50px">
-          <span class="w3-large sociallinks">Chat on Instagram</span></a><br>
+          <a href="https://www.w3schools.com/Css/css_rwd_templates.asp"><img src="https://th.bing.com/th/id/OIP.jmue6n2QHBLdW5Mwa1cl8QHaHa?pid=ImgDet&rs=1" class="w3-left w3-margin-right sociallinks" style="width:50px"></a>
+          <span class="w3-large sociallinks">Instagram</span><br>
           
         </li> 
       </ul>
