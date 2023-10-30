@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Page</title>
-    <style>
+
+    <link rel="shortcut icon" type="image/jpg" href="https://th.bing.com/th/id/R.7fe3baa7d14308d15d0a46180d460949?rik=KnMDMWpoV%2fy82Q&riu=http%3a%2f%2fpluspng.com%2fimg-png%2ffavicon-png-favicon-1024.png&ehk=%2bqV5vS87IkGxoQ9CGodbGHtJdQuFWcL1ZerjusSBDCE%3d&risl=&pid=ImgRaw&r=0"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+        <style>
         body {
             font-family: Arial, sans-serif;
         }
@@ -68,13 +76,65 @@
     .anotherrow1{
     background-color: aqua;
     padding: 8px;
+    margin-top: 80px;
 		}
+
+
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+
+.logotext{
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.hamburgerr{
+
+  margin-top: 20px;
+
+}
+
+.whatsappsocial{
+  margin-top: 1px;
+}
+
+
+.footerdiv{
+  margin-top: 350px;
+  padding: 10px;
+  background-color:gray;
+  font-weight:bold
+}
 
     </style>
 </head>
 <body>
+
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Back</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">+91 1234567890</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left hamburgerr" onclick="w3_open()">☰</div>
+
+    <div class="w3-right w3-padding-16"><h2 class="logotext">EnjoyGifts</h2></div>
+    <div class="w3-center w3-padding-16"><img height="70px" width="150px" src="https://th.bing.com/th/id/R.16a0c60aea0cf02d3aa4d2df1fbaa22b?rik=Eo%2f4me6oHLxUVQ&riu=http%3a%2f%2fblog.kooldesignmaker.com%2fwp-content%2fuploads%2f2013%2f05%2f130.jpg&ehk=FlUAp8sogavVvADe7SE%2fnqw8sqq0bOVr2OVlB9AGS6I%3d&risl=&pid=ImgRaw&r=0"></div>
+
+  </div>
+</div>
+
+
     <div class="container">
-        <h1>Shop Page</h1>
+       
 				<h1 class="anotherrow1" align="center">simple Mugs</h1>
 
         <div class="row">
@@ -290,5 +350,23 @@
 <img src="https://th.bing.com/th/id/OIP.0UxVY-Z4tWWKIEJgm1SmfQHaHa?pid=ImgDet&rs=1">                </div>
             </div>
     </div>
+
+
+
+<div class="footerdiv"><h2 align="center">Thanks for purchaising</h2></div>  
+
+
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+       
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+      </script>
+
 </body>
 </html>
